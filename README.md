@@ -15,7 +15,3 @@ View match demo:
 Authentification demo:
 
 ![authentification](https://user-images.githubusercontent.com/52970539/195324913-f51ecee0-c3be-4045-9741-f923ea0965dd.gif)
-
-Friend system demo:
-
-![addFriends](https://user-images.githubusercontent.com/529705

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --text: #2a1f23;
+    --background: white;
+    --primary:#FBCB0A;
+    --font-family:'Roboto', sans-serif;
+}
+
+html, body, button {
+    font-family: var(--font-family);
+}
+
+.background {
+    background-color: var(--background);
+}
+
+a {
+    color:var(--primary);
+}
+
+.activeTab {
+    background-color: var(--primary);
+    color: var(--text);
+}
+
+.activeTab > a {
+    color: var(--text);
+}
+
+ul {
+    display: flex;
+    border-bottom : solid 1px var(--text);
+    width: 90%;
+}
+
+li {
+    list-style-type: none;
+    margin-right: 16px;
+    padding: 16px;
+    cursor: pointer;
+}
+
+button {
+    background-color: var(--primary);
+    color: var(--text);
+    border:0;
+    border-radius: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconButton {
+    background-color:white;
+    color: var(--text);
+    margin-top: 16px;
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.closeButton {
+    background-color:white;
+    color: var(--text);
+    cursor:pointer;
+}
+
+.lists {
+    width:50%;
+    height:250px;
+    overflow-Y:auto;
+}
+
+.overflowY {
+    overflow-y: "auto";
+}
+
+.largeButton {
+   padding:16px 32px;
+}
+
+.smallPadding {
+    padding:8px;
+}
+
+.mediumPadding {
+    padding:16px;
+}
+
+.largePadding {
+    padding:24px;
+}
+
+.xLargePadding {
+    padding:32px;
+}
+
+.smallMargin{
+    margin:8px;
+}
+
+.smallMarginRight{
+    margin-right:8px;
+}
+
+.mediumMargin {
+    margin:16px;
+}
+
+.largeMargin {
+    margin:24px;
+}
+
+.xLargeMargin {
+    margin:32px;
+}
+
+.mediumMarginBottom {
+    margin-bottom: 16px;
+}

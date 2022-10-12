@@ -1,0 +1,41 @@
+version: "3.4"
+
+services:
+  nest:
+    build: 
+      dockerfile: Dockerfile
+      context: ./nest
+      target: production
+    env_file:
+      - .env
+    volumes:
+      - ./nest/src:/usr/src/app/src/
+      - /usr/src/app/node_modules
+    command: npm start
+    depends_on:
+      - postgres
+    ports:
+      - 3000:3000
+
+  react:
+    build: 
+      dockerfile: Dockerfile
+      context: ./react
+      target: production
+    command: npm start
+    env_file:
+      - .env
+    volumes:
+     - ./react:/react/src/app
+     - /react/src/app/node_modules
+    ports:
+      - 4200:4200
+    links: 
+      - nest
+
+  postgres:
+    image: postgres
+    env_file:
+      - .env
+    ports:
+      - 3500:5432

@@ -2,6 +2,7 @@ This is a full-stack project which implements a version of classic game Pong wit
 
 The game demo:
 ![playPong](https://user-images.githubusercontent.com/52970539/195324892-d14bd2a4-184f-4be3-8b9f-01ca686ebac4.gif)
+
 ![manyMatch](https://user-images.githubusercontent.com/52970539/195324874-7f466ed9-b1dd-4d41-9b01-f65d706687ff.gif)
 
 The chat demo:
